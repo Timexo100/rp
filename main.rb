@@ -33,7 +33,8 @@ fields = [
     :driver_license_data, # Дата выдачи ВУ:
     :logist_name # ФИО специалист-логист по транспорту:
   ]
-Mod.docx_to_json(fields)
 
+Mod.docx_to_json(fields)
 db = DB.new()
 db.push_one_to_db()
+db.fresh_notes_from_db()

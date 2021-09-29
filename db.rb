@@ -14,7 +14,7 @@ def push_many_to_db
     client[:blacklistdrivers].insert_many(JSON.parse(file))
 end
 
-def get_from_db
+def fresh_notes_from_db
     client = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'myNewDB')
     result = client[:blacklistdrivers].find()
     json = result.to_a.to_json
