@@ -13,8 +13,8 @@ const render = (query = "") => {
             filtered.forEach(item => {
                 results.insertAdjacentHTML(
                     "beforeend",
-                    `<li>${item.company_name} / 
-                    ИНН: ${item.company_inn}/ 
+                    `<li>${item.driver_name} / 
+                    ИНН: ${item.driver_birthday}/ 
                     АТИ: ${item.company_ati}/ 
                     Ген.дир: ${item.head_name} 
                     </li>`
