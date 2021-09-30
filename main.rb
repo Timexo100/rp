@@ -9,6 +9,7 @@ fields = [
     :company_ati, # Код АТИ:
     :head_name, # ФИО руководителя организации:
     :head_birthday, # Дата рождения руководителя организации:
+    :head_phones, # Телефоны руководителя организации:
     :operator_name, # ФИО диспетчера:
     :operator_bithday, # Дата рождения диспетчера:
     :operator_phones, # Телефон диспетчера:
@@ -27,11 +28,12 @@ fields = [
     :driver_address,# Место проживания водителя:
     :driver_registration_address, # Адрес регистрации по ПАСПОРТУ:
     :driver_passport, # Серия и номер ПАСПОРТА:
-    :driver_passport_date, # Дата выдачи ПАСПОРТА:
-    :driver_phones, # Телефоны водителя:
+    :driver_passport_whom_date, # Кем и когда выдан ПАСПОРТ водителя:
+    :driver_phones, # Мобильный телефон водителя:
     :driver_license, # Номер водительского удостоверения:
     :driver_license_data, # Дата выдачи ВУ:
-    :logist_name # ФИО специалист-логист по транспорту:
+    :logist_name, # ФИО специалист-логист по транспорту:
+    :security_answer # Ответ сотрудника службы безопасности:
   ]
 
 Mod.docx_to_json(fields)

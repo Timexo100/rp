@@ -14,14 +14,14 @@ require 'json'
 
   def generate_hash_from(fields, lines)
     hash = Hash.new
-    (0..27).each do |index|
+    (0..29).each do |index|
       hash[fields[index]] = lines[index]
     end
     return hash
   end
 
   def docx_to_json(fields)
-    resultHash = generate_hash_from(fields, get_lines_from_docx('example2.docx'))
+    resultHash = generate_hash_from(fields, get_lines_from_docx('application.docx'))
     json = resultHash.to_json
     File.open("application.json","w") do |f|
       f.write(json)
