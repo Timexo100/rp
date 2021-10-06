@@ -1,7 +1,2 @@
-search/data.json
-package.json
-example2.docx
-application.json
-.~lock.application.docx#
-search/data.json
-application.json
+*.docx
+*.json
