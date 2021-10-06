@@ -10,7 +10,7 @@ end
 
 def push_many_to_db
     client = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'myNewDB')
-    file = File.read('./MOCK_DATA.json')
+    file = File.read('./application.json')
     client[:blacklistdrivers].insert_many(JSON.parse(file))
 end
 
@@ -27,3 +27,7 @@ def remove_from_db
    #to-do
 end
 end
+
+db = DB.new
+db.push_many_to_db
+db.fresh_notes_from_db
